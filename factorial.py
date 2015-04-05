@@ -1,7 +1,11 @@
 """Module for estimation of factorial (Homework #1)
 
-Note:  this is just a skeleton for you to work with.  But it already
-       has some "bugs" you need to catch and fix.
+Usage: f=factorial_recursive(n)
+
+input: n: an int for factorial
+
+output: f: the result after factorial
+
 """
 
 from nose.tools import assert_equal
