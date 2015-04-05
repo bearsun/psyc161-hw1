@@ -23,6 +23,7 @@ def test_factorial():
     assert_equal(factorial_recursive(4), 24)
     assert_equal(factorial_recursive(5), 120)
 
+
 if __name__ == '__main__':
     # This is a way to determine either file was "executed", so if it was
     # imported (by e.g. nose) as a library, we should not run code
