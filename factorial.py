@@ -1,10 +1,15 @@
-"""Module for estimation of factorial (Homework #1)
+"""
+Module for estimation of factorial (Homework #1)
 
-Usage: f=factorial_recursive(n)
+This module includes a function for estimation of factorial and another function for testing.
 
-input: n: an int for factorial
+Arithmetic
+----------
+- 'factorial_recursive' -- calculate the factorial
 
-output: f: the result after factorial
+Misc Functions
+----------
+- 'test_factorial' -- test the factorial_recursive function
 
 """
 
@@ -12,7 +17,21 @@ from nose.tools import assert_equal
 
 
 def factorial_recursive(n):
-    # TODO Define your logic for factorial here
+    """
+    Estimate factorial
+
+    Parameters
+    ----------
+    n: positive integer
+
+    Returns
+    ----------
+    product: positive integer
+        The factorial
+    """
+    assert n>0
+    assert type(n) == int or type(n) == long
+
     if n == 1:
         return n
     else:
@@ -20,8 +39,10 @@ def factorial_recursive(n):
 
 
 def test_factorial():
+    """
+    Test for factorial_recursive for nosetest
+    """
     assert_equal(factorial_recursive(1), 1)
-    # TODO: add more
     assert_equal(factorial_recursive(2), 2)
     assert_equal(factorial_recursive(3), 6)
     assert_equal(factorial_recursive(4), 24)
