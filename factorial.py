@@ -1,7 +1,8 @@
 """
 Module for estimation of factorial (Homework #1)
 
-This module includes a function for estimation of factorial and another function for testing.
+This module includes a function for estimation of factorial
+and another function for testing.
 
 Arithmetic
 ----------
@@ -29,7 +30,7 @@ def factorial_recursive(n):
     product: positive integer
         The factorial
     """
-    assert n>0
+    assert n > 0
     assert type(n) == int or type(n) == long
 
     if n == 1:
