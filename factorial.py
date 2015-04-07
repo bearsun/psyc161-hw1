@@ -38,6 +38,7 @@ def factorial_recursive(n):
     else:
         return n*factorial_recursive(n-1)
 
+
 def test_factorial():
     """
     Test for factorial_recursive for nosetest
@@ -47,10 +48,10 @@ def test_factorial():
     assert_equal(factorial_recursive(3), 6)
     assert_equal(factorial_recursive(4), 24)
     assert_equal(factorial_recursive(5), 120)
-    assert_raises(AssertionError,factorial_recursive,"1")
-    assert_raises(AssertionError,factorial_recursive,"eat_my_bug_nose")
-    assert_raises(AssertionError,factorial_recursive,0)
-    assert_raises(AssertionError,factorial_recursive,-10)
+    assert_raises(AssertionError, factorial_recursive, "1")
+    assert_raises(AssertionError, factorial_recursive, "eat_my_bug_nose")
+    assert_raises(AssertionError, factorial_recursive, 0)
+    assert_raises(AssertionError, factorial_recursive, -10)
 
 
 if __name__ == '__main__':
